@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GuiC</string>
+    <string name="hello_world">Hello world!</string>
+    <color name="green">#008000</color>
+    <string name="preferencias_text">GuiC</string>
+    <string name="pesquisar_text">Pesquisar</string>
+    <string name="configuracoes_text">Configurações</string>
+    <string name="configuracoes_text2">Configurações</string>
+    <string name="btpesquisar">Botao Pesquisar</string>
+    <string name="btconfiguracoes">Botao Configuracoes</string>
+    <string name="btpreferencias">Botao Preferencias</string>
+
+
+
+</resources>

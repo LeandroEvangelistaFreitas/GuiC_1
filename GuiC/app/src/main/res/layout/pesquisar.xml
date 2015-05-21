@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/pesquisar_text"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+    
+        <ImageButton
+            android:id="@+id/botaoConfiguracoes_Pesquisar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/btconfiguracoes"
+            android:src="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/botaoPreferencias_Pesquisar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/botaoConfiguracoes_Pesquisar"
+            android:contentDescription="@string/btpreferencias"
+            android:src="@drawable/logo" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/Procurar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/botaoConfiguracoes_Pesquisar"
+        android:background="#FFFFFF"
+        android:text="Pesquisar..." />
+    <ListView
+        android:id="@+id/listaProcurar"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/Procurar">
+    </ListView>
+
+</RelativeLayout>

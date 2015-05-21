@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:ignoreGravity="@layout/configuracoes"
+    android:layout_height="match_parent"
+    android:background="@color/green">
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Configurações"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_alignTop="@+id/botaoPesquisar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/botaoPreferencias" />
+
+    <ImageButton
+        android:id="@+id/botaoPesquisar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/abc_ic_search" />
+
+    <ImageButton
+        android:id="@+id/botaoPreferencias"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/abc_ic_ab_back_holo_dark"
+        android:layout_alignTop="@+id/botaoPesquisar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/botaoPesquisar" />
+
+
+    <ListView
+        android:id="@+id/listaTipos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_above="@+id/botaoSalvar"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:id="@+id/botaoSalvar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Salvar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

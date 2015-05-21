@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ListView
+        android:id="@+id/listaPreferencia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentBottom="false"
+        android:layout_alignWithParentIfMissing="false"
+        style="@style/ListFont">
+    </ListView>
+
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/preferencias_text"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <ImageButton
+        android:id="@+id/botaoPesquisar"
+        android:contentDescription="@string/btpesquisar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/listaPreferencia"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/abc_ic_search" />
+
+    <ImageButton
+        android:id="@+id/botaoConfiguracoes"
+        android:contentDescription="@string/btconfiguracoes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/abc_ic_menu_moreoverflow_normal_holo_dark" />
+
+
+</RelativeLayout>
